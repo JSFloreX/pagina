@@ -1,55 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videojuegos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<a href="#" id="btn-subir">↑</a>
 
 <body>
     <header>
-        <h1>Videojuegos</h1>
-        <p>Los videojuegos son aplicaciones interactivas diseñadas para entretener, educar o simular experiencias a
-            través de dispositivos electrónicos como consolas, computadoras o móviles. Combinan gráficos, sonido y
-            narrativa para crear experiencias inmersivas. Los géneros incluyen acción, aventura, deportes, estrategia,
-            rol y más, cada uno con mecánicas y objetivos únicos.</p>
+        <h1 class="titulo-animado">Videojuegos</h1>
+        <p>Los videojuegos combinan arte y tecnología para crear experiencias interactivas que entretienen.</p>
+        <img id="header-img" src="gokus-unscreen.gif" alt="Animación">
+
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Tutoriales</a>
-            <a href="#">Contenido Multimedia</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#tutoriales">Géneros</a>
+            <a href="#popularidad">Popularidad</a>
+            <a href="#multimedia">Videos de Presentación</a>
+            <a href="#donde-comprar">¿Dónde Comprar?</a>
         </nav>
     </header>
+
     <main>
-        <article>
-
+        <section id="inicio" class="contenido">
             <h2>Videojuegos del Año</h2>
-            <p>"Videojuegos del año o GOTY (Game Of The Year)" se refiere a aquellos títulos destacados que, por su
-                excelencia en diseño,
-                narrativa, jugabilidad e impacto cultural, son reconocidos como los mejores en su año de lanzamiento.
-                Este título suele otorgarse en premios como The Game Awards o por críticas especializadas. Ejemplos
-                incluyen The Legend of Zelda: Breath of the Wild (2017) o Elden Ring (2022).</p>
-            <ol>
-                <li>Juegos divertido</li>
-                <li>Juegos del año</li>
-            </ol>
-            <img width="600px"
-                src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"
-                alt="imagen de elden">
-
-            <video src="video.mp4" width="600px" autoplay loop controls>
-            </video>
-        </article>
+            <p class="descripcion">
+                "Videojuegos del año o GOTY (Game Of The Year)" se refiere a aquellos títulos destacados que, por su
+                excelencia en diseño, narrativa, jugabilidad e impacto cultural, son reconocidos como los mejores en su
+                año de lanzamiento. Ejemplos incluyen <b>The Legend of Zelda: Breath of the Wild (2017)</b> o <b>Elden
+                    Ring (2022)</b>.
+            </p>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-4">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"
+                        class="img-fluid rounded" alt="Elden Ring">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58"
+                        class="img-fluid rounded" alt="Zelda">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/game-awards.jpeg"
+                        class="img-fluid rounded" alt="Game Awards">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <section id="tutoriales" class="contenido">
+        <h2>Géneros de Juegos</h2>
+        <p>Aquí descubrirás los géneros más populares en los Videojuegos.</p>
+        <p>¡Animate a descubrirlos y querrás probar uno de ellos!</p>
+
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://images.crazygames.com/goddess-connect_16x9/20250211032148/goddess-connect_16x9-cover?auto=format,compress&q=75&cs=strip"
+                        class="d-block w-100" alt="Imagen 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Estilo Anime</h5>
+                        <p>Explora el fascinante mundo del anime, donde la imaginación no tiene límites. Desde
+                            emocionantes batallas hasta historias conmovedoras, este estilo artístico ha conquistado
+                            a millones en todo el mundo.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="https://winblog.s3.amazonaws.com/blog/wp-content/uploads/2023/05/juegos-shooter.jpg"
+                        class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Shooters</h5>
+                        <p>Acción intensa y reflejos rápidos te esperan en este género, donde la puntería y la
+                            estrategia deciden la victoria.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://sm.ign.com/t/ign_es/screenshot/default/wallpapersden_rasy.1200.jpg"
+                        class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Aventura</h5>
+                        <p>Vive historias inolvidables mientras exploras mundos fascinantes, resuelves acertijos y
+                            enfrentas desafíos épicos.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/10/juegos-terror-imprescindibles-ayer-hoy-deberias-jugar-halloween-cualquier-momento-ano-4251284.jpg?tf=3840x"
+                        class="d-block w-100" alt="Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Terror</h5>
+                        <p>Sumérgete en atmósferas escalofriantes donde la tensión y el miedo son protagonistas.
+                            ¡Sobrevive si puedes!</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="popularidad" class="contenido">
+        <h2>Popularidad de Géneros</h2>
+        <p>Estos son los géneros más jugados según la comunidad.</p>
+
+        <div class="container">
+            <div class="row justify-content-center">
+   
+                <div class="col-md-3 text-center mb-4">
+                    <img src="https://cdn2.unrealengine.com/witchfire-1920x1080-3aa1970a5886.jpg"
+                        class="img-fluid rounded mb-2" alt="Shooters">
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar bg-danger" style="width: 70%;">Shooters 70%</div>
+                    </div>
+                </div>
+
+          
+                <div class="col-md-3 text-center mb-4">
+                    <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/03/dark-souls-1896461.jpg?tf=3840x"
+                        class="img-fluid rounded mb-2" alt="Aventura">
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar bg-primary" style="width: 50%;">Aventura 50%</div>
+                    </div>
+                </div>
+
+        
+                <div class="col-md-3 text-center mb-4">
+                    <img src="https://www.lavanguardia.com/andro4all/hero/2023/10/poppy-playtime.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+                        class="img-fluid rounded mb-2" alt="Terror">
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar bg-dark" style="width: 30%;">Terror 30%</div>
+                    </div>
+                </div>
+            </div>
+
+      
+            <div class="row justify-content-center">
+                <div class="col-md-3 text-center mb-4">
+                    <img src="https://animenew.com.br/wp-content/uploads/2025/02/5-jogos-com-visual-e-gameplay-inspirados-em-anime.webp"
+                        class="img-fluid rounded mb-2" alt="Anime">
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar bg-info" style="width: 60%;">Anime 60%</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="multimedia" class="contenido">
+        <h2>Presentación de Videojuegos</h2>
+        <p>Explora una colección de videos sobre videojuegos.</p>
+
+
+        <div class="container">
+       
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center mb-4">
+                    <video src="dbz.mp4" class="video" controls></video>
+                </div>
+                <div class="col-md-5 text-center mb-4">
+                    <video src="outlast.mp4" class="video" controls></video>
+                </div>
+            </div>
+
+        
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center mb-4">
+                    <video src="zelda.mp4" class="video" controls></video>
+                </div>
+                <div class="col-md-5 text-center mb-4">
+                    <video src="cod.mp4" class="video" controls></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="donde-comprar" class="contenido">
+        <h2>¿Dónde conseguir los juegos?</h2>
+        <p class="descripcion">
+            Puedes adquirir videojuegos a través de diversas plataformas digitales y tiendas físicas. A continuación, se
+            presentan algunas de las opciones más populares:
+        </p>
+
+      
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <img src="https://cdn.fastly.steamstatic.com/store/home/store_home_share.jpg" class="img-fluid rounded"
+                    alt="Steam">
+            </div>
+            <div class="col-md-3">
+                <img src="https://cdn2.unrealengine.com/egs-brand-gradient-1920x1080-fee5291b4190.jpg"
+                    class="img-fluid rounded" alt="Epic Games Store">
+            </div>
+            <div class="col-md-3">
+                <img src="https://i.blogs.es/5bb931/playstore/1366_2000.jpeg" class="img-fluid rounded"
+                    alt="PlayStation Store">
+            </div>
+            <div class="col-md-3">
+                <img src="https://assets.xboxservices.com/assets/48/de/48de604b-99ee-4400-a600-6958a71f0959.jpg?n=Microsoft-Store-2018_Priority-Feature-0_Pay_1040x585.jpg"
+                    class="img-fluid rounded" alt="Xbox Store">
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="https://cdn.prod.website-files.com/5b476bdb731aa1e787a6aa02/67850b908edb59b3b9093fe4_67800b1b6588e75795c230be_AD_4nXcr0y48LDR9pb_bKOI9mLDaiwkTo13dE9rt5ZMUZL9esTQPafnPsndp3gX7_F9LYTwvt8Vxi7iVsuXiyw_rjnxXpWurCjcnJvCnn65kBBXDHGb6u-TARNTUtOLrNNB8BkrtlNS6.png"
+                        class="img-fluid rounded" alt="Imagen adicional">
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <section id="usuarios" class="contenido">
+        <h2 class="text-center">Lista de Usuarios</h2>
+        <p class="descripcion text-center">
+            A continuación, se muestra una tabla con información de usuarios.
+        </p>
+
+        <div class="table-responsive">
+            <table class="table table-dark table-hover table-bordered">
+                <thead class="table-primary text-center">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td>Alex Mason</td>
+                        <td>Administrador</td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-outline-info">Ver</button>
+                            <button class="btn btn-sm btn-outline-warning">Editar</button>
+                            <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td>Nobara</td>
+                        <td>Analista</td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-outline-info">Ver</button>
+                            <button class="btn btn-sm btn-outline-warning">Editar</button>
+                            <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">3</td>
+                        <td>Goku</td>
+                        <td>Usuario</td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-outline-info">Ver</button>
+                            <button class="btn btn-sm btn-outline-warning">Editar</button>
+                            <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
     <footer>
-        <ul>
-            <li>Juan Sebastian Florez</li>
-            <li>15 de Febrero, 2025</li>
-        </ul>
-
-    </footer>
+        <p>Esta página ofrece información actualizada sobre videojuegos, incluyendo los títulos más populares, géneros,
+            contenido multimedia y dónde adquirirlos. Mantente al día con las últimas novedades del mundo gamer y sigue
+            explorando para descubrir más contenido sobre tus juegos favoritos.</p>
+        <p>Última actualización: 4 de marzo de 2025.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
